@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name · Frontend Dev — 個人品牌網站</title>
-  <meta name="description" content="個人品牌網站：介紹前端工程師背景、技能與作品集，提供聯絡方式與履歷下載。此網站採用乾淨深色主題與 RWD 設計，方便日後替換各區塊內容。" />
+  <meta name="description" content="個人品牌網站：介紹前端工程師背景、技能與作品集，提供聯絡方式與履歷下載。本網站採用乾淨深色主題與 RWD 設計。" />
   <style>
     /* CSS:BASE-START */
     *, *::before, *::after { box-sizing: border-box; }
@@ -59,8 +59,10 @@
     /* CSS:ABOUT-START */
     .section-about { background: linear-gradient(180deg, rgba(8,18,33,0.02), transparent); border-radius:10px; padding:28px; }
     .about-grid { display:grid; gap:16px; }
-    .about-text { color:#d7eafc; }
-    .about-meta { font-size:14px; color:#bcdff7; }
+    .about-text { color:#d7eafc; margin-bottom:12px; }
+    .about-list { list-style-type: disc; margin:8px 0 12px 20px; color:#dff6ff; }
+    .about-list li { margin-bottom:6px; }
+    .about-buttons { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
     /* CSS:ABOUT-END */
 
     /* CSS:SKILLS-START */
@@ -139,17 +141,11 @@
           <h1 id="hero-heading" class="hero-title">個人品牌網站 — 範例骨架</h1>
           <p class="hero-sub">這裡是個人網站的主視覺區，展示個人簡介、核心職稱與行動呼籲。未來會放置更完整的設計與文案。</p>
           <p class="hero-sub about-meta">職稱（範例）：Frontend Developer / UI 實作｜行動呼籲：瀏覽作品集或下載履歷。</p>
-
           <div class="hero-cta-group" aria-hidden="false" style="margin-top:6px;">
             <a class="btn" href="#projects">查看作品集</a>
             <a class="btn theme-primary" href="mailto:hello@example.com">Email 聯絡</a>
           </div>
-
-          <p class="about-meta" style="margin-top:12px;">
-            之後會用 Section SDD 的 Prompt 產生正式文案與版面，請把新的 section 程式碼「整段」貼回來取代這一區。
-          </p>
         </div>
-
         <div class="hero-illustration" style="flex-shrink:0; margin-left:auto;">
           <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
                alt="在筆電前撰寫程式碼的前端開發者工作桌面" 
@@ -163,11 +159,20 @@
     <section id="about" class="section section-about" aria-labelledby="about-heading">
       <div class="container about-grid">
         <div>
-          <h2 id="about-heading" class="section-title">關於我（之後會用 Section SDD 替換）</h2>
-          <p class="about-text">這裡目前是 About 區的占位內容，簡短說明將在此顯示個人背景、求職目標與核心經歷。未來會用 Section SDD 產生更完整的內容，請把新的 section 程式碼整段貼回來，取代這一區。</p>
-          <p class="about-meta">提示給開發者：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+          <h2 id="about-heading" class="section-title">關於我</h2>
+          <p class="about-text">我目前主要從事前端工程師工作，兼具教學與接案經驗，熟悉 HTML、CSS、JavaScript 以及 React 技術。</p>
+          <p class="about-text">我的工作風格重視溝通，喜歡教學並確保每件事情都講清楚，讓團隊與客戶能快速理解與執行。</p>
+          <ul class="about-list">
+            <li>前端專案開發與 UI 實作能力</li>
+            <li>提供教學與技術指導，協助新手快速上手</li>
+            <li>善於溝通與協作，能清楚傳達技術概念</li>
+          </ul>
+          <div class="about-buttons">
+            <a class="btn" href="#projects">查看作品集</a>
+            <a class="btn theme-primary" href="#contact">聯絡我</a>
+          </div>
         </div>
-        <aside aria-hidden="false">
+          <aside aria-hidden="false">
           <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="前端工程師的工作空間示意圖：辦公桌與筆電" loading="lazy" />
         </aside>
       </div>
